@@ -121,8 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const activity = deleteButton.dataset.activity;
-    const email = deleteButton.dataset.email;
+    const activity = decodeURIComponent(deleteButton.dataset.activity || "");
+    const email = decodeURIComponent(deleteButton.dataset.email || "");
 
     if (!activity || !email) {
       return;
