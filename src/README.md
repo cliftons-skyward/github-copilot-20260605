@@ -48,3 +48,19 @@ The application uses a simple data model with meaningful identifiers:
    - Grade level
 
 All data is stored in memory, which means data will be reset when the server restarts.
+
+## Testing
+
+From the repository root, run:
+
+- Only signup tests:
+
+   ```
+   pytest tests/test_signup.py
+   ```
+
+- Full test suite:
+
+   ```
+   pytest
+   ```
