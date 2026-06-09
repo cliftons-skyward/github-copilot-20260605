@@ -68,14 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
               })
               .join("")
           : '<li class="no-participants">No participants yet</li>';
-                    >
-                      &times;
-                    </button>
-                  </li>
-                `
-              )
-              .join("")
-          : "<li class=\"no-participants\">No participants yet</li>";
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
